@@ -1,6 +1,7 @@
 +++
 title= "Apollo Theme"
 template = "homepage.html"
+insert_anchor_links = "heading"
 +++
 
 Thanks for checking out this theme!

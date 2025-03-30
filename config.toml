@@ -1,14 +1,20 @@
 theme = "apollo"
-taxonomies = [{ names = "tags"}]
+taxonomies = [{ name = "tags"}]
 
 # The URL the site will be built for
 base_url = "https://blog.tristanbony.me"
+
+title = "TmpName"
+description = "TmpDescription"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
+
+# RSS feed
+generate_feeds = true
 
 [markdown]
 # Whether to do syntax highlighting
@@ -17,11 +23,17 @@ highlight_code = true
 
 [extra]
 # Put all your custom variables here
-theme = "auto"
+theme = "toggle"
 socials = [
-    # TODO
+    { name = "mastodon", url = "https://floss.social/@TristanB0", icon = "mastodon" },
 ]
 menu = [
-    # TODO
+    # TODO: Add somewhere else if not here { name = "/main_website", url = "https://www.tristanbony.me", weight = 1 },
+    { name = "/posts", url = "/posts", weight = 1 },
+    { name=  "/tags", url = "/tags", weight = 2 },
+]
+favicon = "favicon.svg"
+stylesheets = [
+    # TODO: Change color with custom.css (in static/)
 ]
 # https://github.com/not-matthias/apollo/blob/main/config.toml#L14
