@@ -1,38 +1,42 @@
-theme = "apollo"
-taxonomies = [{ name = "tags"}]
-
-# The URL the site will be built for
 base_url = "https://blog.tristanbony.me"
 
 title = "Tristan's Bytes"
 description = "Yet another blog. Writing about everything and nothing. Vague, isn't it? Well, welcome anyway!"
 
-# Whether to automatically compile all Sass files in the sass directory
+theme = "apollo"
+taxonomies = [{ name = "tags"}]
+
 compile_sass = true
-
-# Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
-
-# RSS feed
 generate_feeds = true
+minify_html = true
 
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
+highlight_theme = "one-dark"
+
+[search]
+include_title = true
+inclde_-description = true
+include_date = true
+include_path = false
+include_content = true
 
 [extra]
-# Put all your custom variables here
 theme = "toggle"
 socials = [
     { name = "mastodon", url = "https://floss.social/@TristanB0", icon = "mastodon" },
+    { name = "rss", url = "https://blog.tristanbony.me/atom.xml", icon = "rss" },
 ]
 menu = [
     { name = "/posts", url = "/posts", weight = 1 },
     { name = "/tags", url = "/tags", weight = 2 },
-    { name = "/rss", url = "/atom.xml", weight = 3 },
 ]
 favicon = "favicon.svg"
 stylesheets = [
     "custom.css"
 ]
+mathjax = true
+mathjax_dollar_inline_enable = true
+toc = true
+fancy_code = true
