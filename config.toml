@@ -34,6 +34,6 @@ menu = [
 ]
 favicon = "favicon.svg"
 stylesheets = [
-    # TODO: Change color with custom.css (in static/)
+    "custom.css"
 ]
 # https://github.com/not-matthias/apollo/blob/main/config.toml#L14
