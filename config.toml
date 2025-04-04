@@ -4,8 +4,8 @@ taxonomies = [{ name = "tags"}]
 # The URL the site will be built for
 base_url = "https://blog.tristanbony.me"
 
-title = "TmpName"
-description = "TmpDescription"
+title = "Tristan's Bytes"
+description = "Yet another blog. Writing about everything and nothing. Vague, isn't it? Well, welcome anyway!"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -28,12 +28,11 @@ socials = [
     { name = "mastodon", url = "https://floss.social/@TristanB0", icon = "mastodon" },
 ]
 menu = [
-    # TODO: Add somewhere else if not here { name = "/main_website", url = "https://www.tristanbony.me", weight = 1 },
     { name = "/posts", url = "/posts", weight = 1 },
-    { name=  "/tags", url = "/tags", weight = 2 },
+    { name = "/tags", url = "/tags", weight = 2 },
+    { name = "/rss", url = "/atom.xml", weight = 3 },
 ]
 favicon = "favicon.svg"
 stylesheets = [
     "custom.css"
 ]
-# https://github.com/not-matthias/apollo/blob/main/config.toml#L14
